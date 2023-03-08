@@ -26,7 +26,8 @@ function Navbar() {
             <div className='hidden md:inline lg:ml-auto md:ml-7'>
                 <span className='rounded-3xl border border-blue-600 px-3 py-1.5 text-xs 
                 cursor-pointer text-blue-600 mx-3 hover: bg-blue-600,text-white'>Sign In</span>
-                <span className='rounded-3xl border bg-blue-600 px-3 py-1.5 text-xs text-white'>Register</span>
+                <span className='rounded-3xl border cursor-pointer
+                 bg-blue-600 px-3 py-1.5 text-xs text-white'>Register</span>
             </div>
         </div>
         

@@ -15,7 +15,7 @@ function HomeHeroSection() {
             <div className='mt-14'>
                 <span className='rounded-3xl border border-blue-600 px-8 py-2 text-xs 
                 cursor-pointer text-blue-600 mx-3 '>Sign In</span>
-                <span className='rounded-3xl border bg-blue-600 px-8 py-2 text-xs text-white'>Register</span>
+                <span className='rounded-3xl cursor-pointer border bg-blue-600 px-8 py-2 text-xs text-white'>Register</span>
             </div>
         </div>
         <div className='lg:w-5/12 sm:w-10/12  md:mx-auto'>

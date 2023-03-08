@@ -6,7 +6,8 @@ export const ntfList = [
         description:'In the RGB color model used in computer and television screens, purples are produced by mixing red and blue light. In the RYB color model historically used by painters, purples are created with a combination of red and blue pigments',
         price: 234000,
         image: '/images/nft1.jpeg',
-        authorAddress:'12,Johnson street South Crenshaw'
+        authorAddress:'12,Johnson street South Crenshaw',
+        url:'https://www.opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/12203926348280826982997985593671501948208978234204186518193238013120241205249'
     },
 
     {

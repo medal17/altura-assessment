@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react'
+import { useNavigate } from "react-router-dom";
 import { currencyFormat } from '../../helpers/currencyFormat'
 
 
 function ProductModal(props) {
     const [picked, setPicked] = useState({})
     const [image, setImage] = useState(null)
-    
+    const navigate = useNavigate();
     useEffect(()=>{
         setPicked(props.data);
         window.scrollTo({
@@ -14,7 +15,7 @@ function ProductModal(props) {
             behavior: "smooth"
           });
     },[props.data])
-    
+
   return (
     picked ?
     <div onClick={()=>props.setPicked('')} className='w-full z-50 fixed mx-auto top-0 h-full bg-opacity-50 bg-gray-900 flex overflow-hidden'>
@@ -29,7 +30,9 @@ function ProductModal(props) {
                         <p className='text-sm mb-2 text-gray-600 text-center'><span className='text-xs text-black font-semibold'>Author's Address: </span>{props?.data?.authorAddress}</p>
                         <div className='flex justify-between border-t border-t-slate-400 pt-5'>
                             <span>{currencyFormat(props?.data?.price?props?.data?.price:0, '$')}</span>
-                            <span className='text-sm text-white text-center bg-blue-600 rounded-md cursor-pointer px-6 py-2'>Buy</span>
+                            <a href='//opensea.io/category/art' target={'blank'}  className='text-sm text-white text-center bg-blue-600 rounded-md cursor-pointer px-6 py-2'>
+                                Buy  
+                            </a>
                         </div>
                     </div>
             </div>
